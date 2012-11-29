@@ -1,0 +1,6 @@
+name:  scrunch
+description:  A sample application
+
+#dependencies:
+#  js: any
+#  unittest: { sdk: unittest }

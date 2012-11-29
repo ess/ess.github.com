@@ -3127,20 +3127,19 @@ $$.Game = {"": ["render", "gameobjects", "level>", "player", "camera>", "message
   $.getInterceptor(t1).add$1(t1, this.player);
   this.loadLevel$0();
   $.window().requestAnimationFrame$1(this.get$loop());
-  this.messages.sendMessage$1('Hello there :). Messages will pop up here.');
+  this.messages.sendMessage$1('Hello there :). Messages will pop-up here.');
 },
  loadLevel$0: function() {
   var t1, t2, t3;
   this.level.loadLevel$1($.JsonController_getJson(this.levelsource));
-  t1 = $.min($.window().get$innerWidth(), this.level.get$w());
-  t2 = this.camera;
-  t2.w = t1;
-  t2.h = $.min($.sub($.window().get$innerHeight(), 44), this.level.get$h());
-  t1 = $.S($.eqB(t2.h, this.level.get$h()) ? $.toInt($.div($.sub($.sub($.window().get$innerHeight(), 44), t2.h), 2)) : 38) + 'px';
+  t1 = this.camera;
+  t1.w = 512;
+  t1.h = 448;
+  t2 = $.S($.eqB(t1.h, this.level.get$h()) ? $.toInt($.div($.sub($.sub($.window().get$innerHeight(), 44), t1.h), 2)) : 38) + 'px';
   t3 = this.render;
-  t3.layer.canvas.get$style().set$marginTop(t1);
+  t3.layer.canvas.get$style().set$marginTop(t2);
   t3.start$1(this);
-  t2.border = $.toInt($.min(t2.w, t2.h) * 0.3);
+  t1.border = $.toInt($.min(t1.w, t1.h) * 0.3);
   this.player.reset$2($.toDouble(this.level.get$startx()), $.toDouble(this.level.get$starty()));
 },
  get$loadLevel: function() { return new $.BoundClosure(this, 'loadLevel$0'); },
@@ -5464,7 +5463,7 @@ $$.RenderLayer = {"": ["canvas>", "ctx>"],
   return value;
 },
  set$height: function(value) {
-  this.canvas.set$width(value);
+  this.canvas.set$height(value);
   return value;
 },
  get$width: function() {
@@ -10187,7 +10186,7 @@ $.$defineNativeClass('Location', {"": [],
 $.$defineNativeClass('LocalMediaStream', {"": []
 });
 
-$.$defineNativeClass('DOMWindow', {"": ["innerHeight>", "innerWidth>", "navigator>", "status>"],
+$.$defineNativeClass('DOMWindow', {"": ["innerHeight>", "navigator>", "status>"],
  open$3: function(url, name$, options) {
   if (options == null)
     return $._DOMWindowCrossFrame__createSafe(this.open(url,name$));

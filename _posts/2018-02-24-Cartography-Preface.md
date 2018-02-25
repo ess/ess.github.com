@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Cartography Preface
+title: Cartography
 ---
 
-Have you ever wanted to create your very own client for a REST API? That's what this series, Cartography, is all about.
+Have you ever wanted to create your very own client for a REST API? Tearing apart such APIs and figuring out a way to work with them is a big part of what I do every day.
 
-Why "cartography?" Well, a lot of the REST APIs out there, regardless of how well documented they may be, require for us to do a bit of journeying and mapping along the way to figure out how things really work. A lot of the time, the API provider will go ahead and publish clients for the popular languages of the day because of the above conundrum, but that isn't always the case.
+So, I've started writing a book about rolling one's own REST API client. It's called Cartography. You can read what there is of it so far [here](https://ess.github.io/cartography), but keep in mind that I literally started writing today, and it's very much WIP.
 
-For example, the [Engine Yard API](https://developer.engineyard.com) is relatively well-documented, and Engine Yard does provide [a Ruby client](https://github.com/engineyard/core-client-rb), but what if I want to consume this API from a Python program?
-
-That is the example that we'll use for this series: implementing a Python client for the Engine Yard API. That said, the techniques used here should be fairly easily adapated to most any language or API.
+Also, I'm using a language that I don't know, Python, to illustrate the creation of an API client. Whether you're looking to learn how to do it or just want to see what it looks like when somebody who doesn't know the language tries to use the language, please do check it out and enjoy.

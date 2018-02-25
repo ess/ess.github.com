@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cartography: An Introduction
+title: Cartography Preface
 ---
 
 Have you ever wanted to create your very own client for a REST API? That's what this series, Cartography, is all about.

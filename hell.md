@@ -1,3 +1,9 @@
+---
+layout: none
+title: Hell
+permalink: /hell/
+---
+
 <!DOCTYPE html>
 <html>
   <head>

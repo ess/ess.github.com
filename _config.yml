@@ -6,13 +6,13 @@
 lang: "en"
 
 # Name of your site (displayed in the header)
-title: Forever Jekyll
+title: Flibberty Gibbets
 
 # Short bio or description (displayed in the header)
-description: A simple, elegant and full featured Jekyll theme
+description: Ramblings of a time traveller from a broken present.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /assets/image/avatar.png
+avatar: https://avatars0.githubusercontent.com/u/100406?s=400&v=4
 
 #
 # Flags below are optional
@@ -20,7 +20,7 @@ avatar: /assets/image/avatar.png
 
 # Your website URL (e.g. https://forever-jekyll.github.io or https://forever-jekyll.com)
 # Used for Sitemap.xml and your RSS feed
-url: https://forever-jekyll.github.io
+url: https://ess.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -36,6 +36,9 @@ navigation_links:
   - title: About
     url: /about
 
+  - title: Tags
+    url: /categories
+
   - title: Search
     url: /search
 
@@ -45,13 +48,22 @@ footer_links:
     url: feed.xml
     icon: fa fa-rss-square
 
-  - title: Twitter
-    url: https://twitter.com/jekyllrb
-    icon: fa fa-twitter-square
+  - title: Codeberg
+    url: https://codeberg.org/ess
+    icon: fa fa-gitea
 
   - title: GitHub
-    url: https://github.com/forever-jekyll
+    url: https://github.com/ess
     icon: fa fa-github-square
+  
+  - title: Mastodon
+    url: https://mastodon.social/@bendingoutward
+    icon: fa fa-mastodon-square
+ 
+  - title: Twitter
+    url: https://twitter.com/bendingoutward
+    icon: fa fa-twitter-square
+
 
 # Enter your copyright text if you wish to override the default one.
 #copyright: "This site is made with <3 by *me, myself, and I*."
@@ -66,7 +78,8 @@ excerpt_separator: <!--more-->
 # !! You don't need to change any of the configuration flags below !!
 #
 
-permalink: pretty
+#permalink: pretty
+permalink: /:year/:month/:day/:title
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:

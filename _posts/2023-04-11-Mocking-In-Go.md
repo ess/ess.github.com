@@ -26,7 +26,7 @@ Way back in the last post, I mentioned that things are awesome if you design you
 ```go
 package conflatedexample
 
-type interface Validator {
+type Validator interface {
   Validate(interface{}) error
 }
 ```

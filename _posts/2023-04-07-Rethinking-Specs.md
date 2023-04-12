@@ -4,7 +4,7 @@ title: Rethinking Specs (an update)
 categories: [bdd, go, inside testing, update]
 ---
 
-So, last time around, I promised that we'd talk about mocking next. That's still the plan for the next real post. However, I had a conversation yesterday with my pal Ian around the idea of lightweight specs using Go's standard `testing` library (and specifically the spec that I presented in the previous post). We came to the conclusion that there's a slight change we could make to make that spec even more like a real spec, so let's explore that.
+So, last time around, I promised that we'd talk about mocking next. That's still the plan for the next real post. However, I had a conversation yesterday with my pal [Ian](https://www.linkedin.com/in/ianjuma/) around the idea of lightweight specs using Go's standard `testing` library (and specifically the spec that I presented in the previous post). We came to the conclusion that there's a slight change we could make to make that spec even more like a real spec, so let's explore that.
 
 ## Orange ##
 

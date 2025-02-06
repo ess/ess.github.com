@@ -98,7 +98,7 @@ In this experiment, Lemmy wins *hands down*. While VERN did not catch the anger 
 
 Okay, okay. So, we have a confession to make. Lemmy isn't really a new LLM. Lemmy is a middleman proxy that sits between you and OpenAI's API. When you send a request to Lemmy, it transparently annotates all user messages with a list of strong emotions detected by VERN for that message. It then forwards the request on to the real OpenAI (or Llama, or DeepSeek, or Qwen2.5, or whatever) and returns the raw response back to you.
 
-You might recall that we found a while back that [ChatGPT Doesn't Get Emotions](/insert/link/here). We wanted to change that, and this was the easiest way we could think to do that (without requiring the tool execution workflow that may or may not be supported by your LLM of choice).
+You might recall that we found a while back that [ChatGPT Doesn't Get Emotions](https://vernai.com/large-language-models-llms-fail-to-feel/). We wanted to change that, and this was the easiest way we could think to do that (without requiring the tool execution workflow that may or may not be supported by your LLM of choice).
 
 
 
